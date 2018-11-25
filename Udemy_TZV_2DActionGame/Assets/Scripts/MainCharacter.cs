@@ -9,11 +9,16 @@ public class MainCharacter : MonoBehaviour
     private Rigidbody2D myRB;
     private Vector2 moveAmount;
 
+    private Animator myAnimator;
+
     //****************************************************************************************************
     private void Start()
     {
-        // Assign rigid body to local variable
+        // Assign RigidBody
         myRB = GetComponent<Rigidbody2D>();
+
+        // Assign Animator
+        myAnimator = GetComponent<Animator>();
     }
 
     //****************************************************************************************************
@@ -24,6 +29,18 @@ public class MainCharacter : MonoBehaviour
 
         // Calculate the amount of movement the player has asked for
         moveAmount = playerInput.normalized * movementSpeed;
+
+        // If the player is moving
+        if (playerInput != Vector2.zero)
+        {
+            // start run animation
+            myAnimator.SetBool("isRunning", true);
+        }
+        else
+        {
+            // stop run animation
+            myAnimator.SetBool("isRunning", false);
+        }
     }
 
     //****************************************************************************************************
