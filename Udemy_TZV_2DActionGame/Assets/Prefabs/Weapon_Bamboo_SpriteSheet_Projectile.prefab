@@ -54,6 +54,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   lifeTime: 2
+  particleEffect: {fileID: 1302309972561984, guid: c91d7a3db148e8c48ae91307ca7b3fde,
+    type: 2}
 --- !u!212 &212849354732726608
 SpriteRenderer:
   m_ObjectHideFlags: 1
