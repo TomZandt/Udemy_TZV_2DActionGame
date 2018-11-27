@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class projectile : MonoBehaviour
 {
+    public int damageDealt = 26;
     public float speed = 15f;
     public float lifeTime = 2f;
     public GameObject particleEffect;
@@ -23,5 +24,15 @@ public class projectile : MonoBehaviour
         Instantiate(particleEffect, transform.position, Quaternion.identity);
 
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            collision.GetComponent<Enemy>().TakeDamage(damageDealt);
+
+            DestroyProjectile();
+        }
     }
 }
