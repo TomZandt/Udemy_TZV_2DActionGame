@@ -676,7 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  myHealth: 100
+  myHealth: 500
 --- !u!114 &114722665429540776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -690,7 +690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1050643559083710, guid: 97d7ac3d3312383469133859f35e4e84, type: 2}
   barrel: {fileID: 4198481704138798}
-  timeBetweenShots: 0.3
+  timeBetweenShots: 0.2
 --- !u!212 &212084147465546908
 SpriteRenderer:
   m_ObjectHideFlags: 1
