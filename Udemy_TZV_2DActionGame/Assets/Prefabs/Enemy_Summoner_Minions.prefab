@@ -211,7 +211,7 @@ MonoBehaviour:
   player: {fileID: 0}
   enemySpeed: 1.5
   enemyAttackRate: 4
-  enemyDamage: 60
+  enemyDamage: 200
   minWorldX: -11
   maxWorldX: 11
   minWorldY: -5
