@@ -5,6 +5,7 @@ using UnityEngine;
 public class MainCharacter : MonoBehaviour
 {
     public float movementSpeed;
+    public float myHealth = 100f;
 
     private Rigidbody2D myRB;
     private Vector2 moveAmount;
@@ -48,5 +49,15 @@ public class MainCharacter : MonoBehaviour
     {
         // Move rigidbody
         myRB.MovePosition(myRB.position + moveAmount * Time.fixedDeltaTime);
+    }
+
+    public void TakeDamage(int damageAmount)
+    {
+        myHealth -= damageAmount;
+
+        if (myHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4918625295343740}
   - component: {fileID: 212084147465546908}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainCharacter_SpriteSheet_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4339519718500304}
   - component: {fileID: 212590692355841456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainCharacter_SpriteSheet_RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4728155738167822}
   - component: {fileID: 212586276057796254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon_Bamboo_SpriteSheet_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4932844305308768}
   - component: {fileID: 212503932282520934}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainCharacter_SpriteSheet_LeftPupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4030283582967952}
   - component: {fileID: 212614550654820238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon_Bamboo_SpriteSheet_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4121386383839878}
   - component: {fileID: 212563853523851408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon_Bamboo_SpriteSheet_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4031032566080738}
   - component: {fileID: 212961814850164536}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainCharacter_SpriteSheet_RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4198481704138798}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4112521143188696}
   - component: {fileID: 212717019731580796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainCharacter_SpriteSheet_LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4070780025123922}
   - component: {fileID: 212525953964759242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4721770187896592}
   - component: {fileID: 212602576228963794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainCharacter_SpriteSheet_LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4637426070629044}
   - component: {fileID: 212308741276488398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon_Bamboo_SpriteSheet_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 114126254965678922}
   - component: {fileID: 50294339667159790}
   - component: {fileID: 61469351438588328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4059333551412712}
   - component: {fileID: 212428406939865662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon_Bamboo_SpriteSheet_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 4306371226125766}
   - component: {fileID: 95096455443643944}
   - component: {fileID: 114722665429540776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4343420243470330}
   - component: {fileID: 212843834308030332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainCharacter_SpriteSheet_Nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4649749219619820}
   - component: {fileID: 212505832999221736}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainCharacter_SpriteSheet_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4412367136279514}
   - component: {fileID: 212716418930392516}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon_Bamboo_SpriteSheet_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4704849431101964}
   - component: {fileID: 212655327867149896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainCharacter_SpriteSheet_RightPupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,6 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
+  myHealth: 100
 --- !u!114 &114722665429540776
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4327039079579940}
   - component: {fileID: 212559246559671930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_Bee_SpriteSheet_WingBR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4079700197750652}
   - component: {fileID: 212567533257278146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_Bee_SpriteSheet_WingTL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4224463554637538}
   - component: {fileID: 212753400052778454}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_Bee_SpriteSheet_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,10 +68,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4541611737352990}
   - component: {fileID: 95397807407878146}
-  - component: {fileID: 114430878418352936}
   - component: {fileID: 58642575246135236}
   - component: {fileID: 50338203742137726}
-  m_Layer: 0
+  - component: {fileID: 114761665529501234}
+  m_Layer: 9
   m_Name: Enemy_Bee
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4229902384223572}
   - component: {fileID: 212658597427644200}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_Bee_SpriteSheet_WingTR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4621653949705290}
   - component: {fileID: 212778767762735568}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_Bee_SpriteSheet_WingBL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4127362104443622}
   - component: {fileID: 212875569531736734}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4916407922781122}
   - component: {fileID: 212552416364175918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_Bee_SpriteSheet_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1757505877379414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 9.85, y: 6.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4916407922781122}
@@ -306,7 +306,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114430878418352936
+--- !u!114 &114761665529501234
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -314,10 +314,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1757505877379414}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f44f00d20aa36d4591bcfd56b22ff02, type: 3}
+  m_Script: {fileID: 11500000, guid: ce8852092c83e7b4c84e40b73866490f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  myHealth: 100
+  player: {fileID: 0}
+  enemySpeed: 4
+  enemyAttackRate: 1
+  enemyDamage: 40
+  stopDistance: 2
+  attackSpeed: 3.5
 --- !u!212 &212552416364175918
 SpriteRenderer:
   m_ObjectHideFlags: 1
