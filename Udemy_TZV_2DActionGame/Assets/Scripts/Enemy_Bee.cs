@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class Enemy_Bee : Enemy
 {
-    public float stopDistance = 2f;
+    [Space(20)]
+    [Header("'Enemy_Bee.cs' Specific:")]
+    [Space(5)]
+    [Header("The speed of the melee attack")]
     public float attackSpeed = 3.5f;
-    private float attackTime;
+    
+    [Header("The distance the enemy can be before melee attacking")]
+    public float stopDistance = 2f;
 
+    private float attackTime = 0f;
+
+    //****************************************************************************************************
     private void Update()
     {
         // IF the player is not dead
@@ -30,6 +38,7 @@ public class Enemy_Bee : Enemy
         }
     }
 
+    //****************************************************************************************************
     IEnumerator Attack()
     {
         player.GetComponent<MainCharacter>().TakeDamage(enemyDamage);

@@ -319,11 +319,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myHealth: 100
   player: {fileID: 0}
-  enemySpeed: 4
+  enemySpeed: 2
   enemyAttackRate: 1
   enemyDamage: 40
-  stopDistance: 2
-  attackSpeed: 3.5
+  attackSpeed: 4
+  stopDistance: 3
 --- !u!212 &212552416364175918
 SpriteRenderer:
   m_ObjectHideFlags: 1

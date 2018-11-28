@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class MainCharacter : MonoBehaviour
 {
-    public float movementSpeed;
+    [Header("The movement speed of the character")]
+    public float movementSpeed = 10f;
+
+    [Header("The health of the character")]
     public float myHealth = 100f;
 
     private Rigidbody2D myRB;
     private Vector2 moveAmount;
-
     private Animator myAnimator;
 
     //****************************************************************************************************
@@ -47,10 +49,14 @@ public class MainCharacter : MonoBehaviour
     //****************************************************************************************************
     private void FixedUpdate()
     {
-        // Move rigidbody
-        myRB.MovePosition(myRB.position + moveAmount * Time.fixedDeltaTime);
+        if (moveAmount != Vector2.zero)
+        {
+            // Move rigidbody
+            myRB.MovePosition(myRB.position + moveAmount * Time.fixedDeltaTime);
+        }
     }
 
+    //****************************************************************************************************
     public void TakeDamage(int damageAmount)
     {
         myHealth -= damageAmount;

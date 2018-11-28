@@ -12,11 +12,13 @@ public class CameraFollow : MonoBehaviour
     public float maxX;
     public float maxY;
 
+    //****************************************************************************************************
     private void Start()
     {
         transform.position = playerTransform.position;
     }
 
+    //****************************************************************************************************
     private void Update()
     {
         if(playerTransform != null)

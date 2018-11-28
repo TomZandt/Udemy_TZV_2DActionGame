@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    [Header("The projectile prefab to shoot")]
     public GameObject projectile;
+
+    [Header("The transform to shoot from")]
     public Transform barrel;
+
+    [Header("The time between shots in seconds")]
     public float timeBetweenShots = 0.3f;
 
     private float shotTime;
 
+    //****************************************************************************************************
     private void Update()
     {
         // Point the weapon to the players mouse
