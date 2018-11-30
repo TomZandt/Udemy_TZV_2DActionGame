@@ -21,6 +21,12 @@ public class Enemy : MonoBehaviour
     [Header("The damage the enemy deals")]
     public int enemyDamage = 40;
 
+    [Header("The % chance of dropping a pickup")]
+    public int dropPickupChance = 10;
+
+    [Header("The array of possible pickups")]
+    public GameObject[] dropPickups;
+
     //****************************************************************************************************
     public virtual void Start()
     {
@@ -30,10 +36,29 @@ public class Enemy : MonoBehaviour
     //****************************************************************************************************
     public void TakeDamage(int damageAmount)
     {
+        // Subtract health
         myHealth -= damageAmount;
 
+        // If i am dead
         if (myHealth <= 0)
         {
+            if (dropPickups.Length > 0)
+            {
+                // Generate a random number between 0 and 100
+                int randomNumber = Random.Range(0, 101);
+
+                // If the random number is less than the chance
+                if (randomNumber < dropPickupChance)
+                {
+                    // Assign a random pickup
+                    GameObject randomPickup = dropPickups[Random.Range(0, dropPickups.Length)];
+
+                    // Spawn in place of enemy
+                    Instantiate(randomPickup, transform.position, transform.rotation);
+                }
+            }
+
+            // Destroy me
             Destroy(gameObject);
         }
     }

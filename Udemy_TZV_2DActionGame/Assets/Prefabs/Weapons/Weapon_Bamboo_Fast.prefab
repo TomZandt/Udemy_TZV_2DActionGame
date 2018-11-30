@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 114547907181630616}
   m_Layer: 0
   m_Name: Weapon_Bamboo_Fast
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -223,8 +223,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1055078241899396}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16985907, y: -0.49011838, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4419381610624794}
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1050643559083710, guid: cccd4f47663ba314a847799ccb92b0b0, type: 2}
   barrel: {fileID: 4314779640871348}
-  timeBetweenShots: 0.5
+  timeBetweenShots: 0.2
 --- !u!212 &212049337676570438
 SpriteRenderer:
   m_ObjectHideFlags: 1

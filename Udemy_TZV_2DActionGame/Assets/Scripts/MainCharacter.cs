@@ -66,4 +66,14 @@ public class MainCharacter : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    //****************************************************************************************************
+    public void ChangeWeapon(Weapon weaponToEquip)
+    {
+        // Destroy the existing weapon with the tag
+        Destroy(GameObject.FindGameObjectWithTag("Weapon"));
+
+        // Equip the new weapon
+        Instantiate(weaponToEquip, transform.position, transform.rotation, transform);
+    }
 }
