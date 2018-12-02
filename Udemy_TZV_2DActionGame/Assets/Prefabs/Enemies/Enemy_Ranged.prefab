@@ -200,7 +200,12 @@ MonoBehaviour:
   player: {fileID: 0}
   enemySpeed: 4
   enemyAttackRate: 2
-  enemyDamage: 10
+  enemyDamage: 1
+  dropPickupChance: 10
+  healthPickupChance: 50
+  dropPickups: []
+  healthPickup: {fileID: 1392068949382802, guid: 10485e96a4bd64448a6739475551607d,
+    type: 2}
   stopDistance: 6
   barrel: {fileID: 4753514141295652}
   bulletToShoot: {fileID: 1760236291674378, guid: a556cae0380ddf1499361a1fd67d3ce9,

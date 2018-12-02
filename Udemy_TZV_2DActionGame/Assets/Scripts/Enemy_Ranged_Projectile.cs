@@ -8,7 +8,7 @@ public class Enemy_Ranged_Projectile : MonoBehaviour
     public float projectileSpeed = 15f;
 
     [Header("The damage dealt by the projectile")]
-    public int damageDealt = 26;
+    public int damageDealt = 1;
 
     private MainCharacter playerScript;
     private Vector2 targetPosition;

@@ -19,13 +19,15 @@ public class Enemy : MonoBehaviour
     public float enemyAttackRate = 1f;
 
     [Header("The damage the enemy deals")]
-    public int enemyDamage = 40;
+    public int enemyDamage = 1;
 
     [Header("The % chance of dropping a pickup")]
     public int dropPickupChance = 10;
+    public int healthPickupChance = 50;
 
     [Header("The array of possible pickups")]
     public GameObject[] dropPickups;
+    public GameObject healthPickup;
 
     //****************************************************************************************************
     public virtual void Start()
@@ -56,6 +58,15 @@ public class Enemy : MonoBehaviour
                     // Spawn in place of enemy
                     Instantiate(randomPickup, transform.position, transform.rotation);
                 }
+            }
+
+            // Generate a new random number
+            int randomHealth= Random.Range(0, 101);
+
+            if (randomHealth < healthPickupChance)
+            {
+                // Spawn in place of enemy
+                Instantiate(healthPickup, transform.position, transform.rotation);
             }
 
             // Destroy me

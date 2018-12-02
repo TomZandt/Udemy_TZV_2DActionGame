@@ -9,7 +9,7 @@ public class MainCharacter : MonoBehaviour
     public float movementSpeed = 10f;
 
     [Header("The health of the character")]
-    public float myHealth = 500f;
+    public int myHealth = 5;
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
@@ -64,7 +64,7 @@ public class MainCharacter : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         myHealth -= damageAmount;
-              
+
         UpdateHealthUI(myHealth);
 
         if (myHealth <= 0)
@@ -84,14 +84,12 @@ public class MainCharacter : MonoBehaviour
     }
 
     //****************************************************************************************************
-    private void UpdateHealthUI(float currentHealth)
+    private void UpdateHealthUI(int currentHealth)
     {
-        float scaledHealth = Mathf.RoundToInt((currentHealth * hearts.Length) / 500);
-
         // For each number of hearts we have
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (i < scaledHealth)
+            if (i < currentHealth)
             {
                 hearts[i].sprite = fullHeart;
             }
@@ -99,6 +97,27 @@ public class MainCharacter : MonoBehaviour
             {
                 hearts[i].sprite = emptyHeart;
             }
+        }
+    }
+
+    //****************************************************************************************************
+    public void Heal(int healAmount)
+    {
+        if (myHealth + healAmount > 5)
+        {
+            myHealth = 5;
+            UpdateHealthUI(myHealth);
+        }
+        else if (myHealth + healAmount <= 0 || healAmount < 0)
+        {
+            return;
+        }
+        else
+        {
+            // Add health
+            myHealth += healAmount;
+
+            UpdateHealthUI(myHealth);
         }
     }
 }

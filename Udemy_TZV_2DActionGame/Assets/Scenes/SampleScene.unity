@@ -2964,7 +2964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  myHealth: 500
+  myHealth: 5
   hearts:
   - {fileID: 1162788839}
   - {fileID: 673878333}

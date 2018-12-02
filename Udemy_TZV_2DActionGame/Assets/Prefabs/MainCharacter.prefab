@@ -676,7 +676,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  myHealth: 500
+  myHealth: 5
+  hearts: []
+  fullHeart: {fileID: 0}
+  emptyHeart: {fileID: 0}
 --- !u!114 &114722665429540776
 MonoBehaviour:
   m_ObjectHideFlags: 1

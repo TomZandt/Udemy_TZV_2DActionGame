@@ -211,7 +211,12 @@ MonoBehaviour:
   player: {fileID: 0}
   enemySpeed: 1.5
   enemyAttackRate: 4
-  enemyDamage: 200
+  enemyDamage: 1
+  dropPickupChance: 10
+  healthPickupChance: 10
+  dropPickups: []
+  healthPickup: {fileID: 1392068949382802, guid: 10485e96a4bd64448a6739475551607d,
+    type: 2}
   minWorldX: -11
   maxWorldX: 11
   minWorldY: -5

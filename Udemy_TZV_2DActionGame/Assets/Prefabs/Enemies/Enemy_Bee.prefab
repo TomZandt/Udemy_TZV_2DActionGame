@@ -321,12 +321,15 @@ MonoBehaviour:
   player: {fileID: 0}
   enemySpeed: 2
   enemyAttackRate: 1
-  enemyDamage: 40
+  enemyDamage: 1
   dropPickupChance: 50
+  healthPickupChance: 50
   dropPickups:
   - {fileID: 1191609526891614, guid: d65ea1bfb0a052f4fb000cb763b6dc65, type: 2}
   - {fileID: 1191609526891614, guid: 5b43fddc09f1291478d022c8f47d2988, type: 2}
   - {fileID: 1191609526891614, guid: 29da6b090173310449475bec294b2c49, type: 2}
+  healthPickup: {fileID: 1392068949382802, guid: 10485e96a4bd64448a6739475551607d,
+    type: 2}
   attackSpeed: 4
   stopDistance: 3
 --- !u!212 &212552416364175918
