@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainCharacter : MonoBehaviour
 {
@@ -8,7 +9,10 @@ public class MainCharacter : MonoBehaviour
     public float movementSpeed = 10f;
 
     [Header("The health of the character")]
-    public float myHealth = 100f;
+    public float myHealth = 500f;
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
 
     private Rigidbody2D myRB;
     private Vector2 moveAmount;
@@ -60,6 +64,8 @@ public class MainCharacter : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         myHealth -= damageAmount;
+              
+        UpdateHealthUI(myHealth);
 
         if (myHealth <= 0)
         {
@@ -75,5 +81,24 @@ public class MainCharacter : MonoBehaviour
 
         // Equip the new weapon
         Instantiate(weaponToEquip, transform.position, transform.rotation, transform);
+    }
+
+    //****************************************************************************************************
+    private void UpdateHealthUI(float currentHealth)
+    {
+        float scaledHealth = Mathf.RoundToInt((currentHealth * hearts.Length) / 500);
+
+        // For each number of hearts we have
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < scaledHealth)
+            {
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                hearts[i].sprite = emptyHeart;
+            }
+        }
     }
 }
