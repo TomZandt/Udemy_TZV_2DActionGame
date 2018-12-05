@@ -38,10 +38,10 @@ GameObject:
   - component: {fileID: 95131106438299850}
   - component: {fileID: 58120363544966152}
   - component: {fileID: 50324596032869326}
-  - component: {fileID: 114665275394884742}
+  - component: {fileID: 114649504146912682}
   m_Layer: 9
   m_Name: Enemy_Boss
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,7 +282,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.04}
@@ -306,7 +306,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114665275394884742
+--- !u!114 &114649504146912682
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -314,21 +314,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1482527755596208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce8852092c83e7b4c84e40b73866490f, type: 3}
+  m_Script: {fileID: 11500000, guid: c4b466c8efe1d204a8c9739cd111c3b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myHealth: 1000
-  player: {fileID: 0}
-  enemySpeed: 1
-  enemyAttackRate: 5
-  enemyDamage: 1
-  dropPickupChance: 0
-  healthPickupChance: 0
-  dropPickups: []
-  healthPickup: {fileID: 1392068949382802, guid: 10485e96a4bd64448a6739475551607d,
-    type: 2}
-  attackSpeed: 4
-  stopDistance: 1
+  bossHealth: 60
+  enemies:
+  - {fileID: 114761665529501234, guid: 032f818cce060d84f81fe038a33ea357, type: 2}
+  - {fileID: 114931116762328580, guid: 46b1d247ad0cc43438cb7c468ed192e8, type: 2}
+  - {fileID: 114630410275781198, guid: f77f14c82abdbe448af1951a99c916fc, type: 2}
+  enemyOffset: {x: 10, y: 10, z: 0}
 --- !u!212 &212036457635038120
 SpriteRenderer:
   m_ObjectHideFlags: 1
