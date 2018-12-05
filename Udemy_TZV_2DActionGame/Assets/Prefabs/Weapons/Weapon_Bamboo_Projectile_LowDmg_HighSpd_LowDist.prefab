@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceeff81324efebd4783844917de1bcd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageDealt: 10
+  damageDealt: 1
   speed: 15
   lifeTime: 1.5
   particleCollideEffect: {fileID: 1302309972561984, guid: c91d7a3db148e8c48ae91307ca7b3fde,

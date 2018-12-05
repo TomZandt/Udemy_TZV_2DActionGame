@@ -317,12 +317,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b466c8efe1d204a8c9739cd111c3b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHealth: 60
+  bossHealth: 10
   enemies:
   - {fileID: 114761665529501234, guid: 032f818cce060d84f81fe038a33ea357, type: 2}
-  - {fileID: 114931116762328580, guid: 46b1d247ad0cc43438cb7c468ed192e8, type: 2}
-  - {fileID: 114630410275781198, guid: f77f14c82abdbe448af1951a99c916fc, type: 2}
   enemyOffset: {x: 10, y: 10, z: 0}
+  damage: 1
 --- !u!212 &212036457635038120
 SpriteRenderer:
   m_ObjectHideFlags: 1

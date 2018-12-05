@@ -84,33 +84,23 @@ MonoBehaviour:
   - enemies:
     - {fileID: 114931116762328580, guid: 46b1d247ad0cc43438cb7c468ed192e8, type: 2}
     count: 5
-    timeBetweenSpawns: 3
+    timeBetweenSpawns: 1
   - enemies:
     - {fileID: 114931116762328580, guid: 46b1d247ad0cc43438cb7c468ed192e8, type: 2}
     - {fileID: 114761665529501234, guid: 032f818cce060d84f81fe038a33ea357, type: 2}
-    count: 10
-    timeBetweenSpawns: 3
+    count: 5
+    timeBetweenSpawns: 1.5
   - enemies:
-    - {fileID: 114931116762328580, guid: 46b1d247ad0cc43438cb7c468ed192e8, type: 2}
-    - {fileID: 114761665529501234, guid: 032f818cce060d84f81fe038a33ea357, type: 2}
-    - {fileID: 114630410275781198, guid: f77f14c82abdbe448af1951a99c916fc, type: 2}
-    count: 15
-    timeBetweenSpawns: 3
-  - enemies:
-    - {fileID: 114931116762328580, guid: 46b1d247ad0cc43438cb7c468ed192e8, type: 2}
-    - {fileID: 114761665529501234, guid: 032f818cce060d84f81fe038a33ea357, type: 2}
     - {fileID: 114630410275781198, guid: f77f14c82abdbe448af1951a99c916fc, type: 2}
     - {fileID: 114891790459946270, guid: 13993cbb92283b340a486e4a87610004, type: 2}
-    count: 25
-    timeBetweenSpawns: 3
+    count: 5
+    timeBetweenSpawns: 4
   - enemies:
-    - {fileID: 114761665529501234, guid: 032f818cce060d84f81fe038a33ea357, type: 2}
-    - {fileID: 114630410275781198, guid: f77f14c82abdbe448af1951a99c916fc, type: 2}
     - {fileID: 114103556491668902, guid: b846d585ad7f3d74f938e3bbda5db8d8, type: 2}
-    - {fileID: 114931116762328580, guid: 46b1d247ad0cc43438cb7c468ed192e8, type: 2}
     - {fileID: 114891790459946270, guid: 13993cbb92283b340a486e4a87610004, type: 2}
-    count: 30
-    timeBetweenSpawns: 3
+    - {fileID: 114630410275781198, guid: f77f14c82abdbe448af1951a99c916fc, type: 2}
+    count: 5
+    timeBetweenSpawns: 4
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -120,9 +110,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 1
   boss: {fileID: 1482527755596208, guid: 549493806d0996b459a3350aae2623ab, type: 2}
   bossSpawnPoint: {fileID: 4956718710048140}
-  textCanvas1: {fileID: 0}
-  textCanvas2: {fileID: 0}
-  textCanvas3: {fileID: 0}

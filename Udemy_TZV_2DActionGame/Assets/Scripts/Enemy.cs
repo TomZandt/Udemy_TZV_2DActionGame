@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     [Header("'Enemy.cs' Specific:")]
     [Space(5)]
     [Header("The health of the enemy")]
-    public int myHealth = 100;
+    public int myHealth = 1;
 
     [HideInInspector]
     public Transform player;

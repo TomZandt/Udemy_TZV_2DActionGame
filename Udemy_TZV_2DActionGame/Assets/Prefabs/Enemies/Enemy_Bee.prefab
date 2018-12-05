@@ -317,9 +317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8852092c83e7b4c84e40b73866490f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myHealth: 100
+  myHealth: 2
   player: {fileID: 0}
-  enemySpeed: 2
+  enemySpeed: 1
   enemyAttackRate: 1
   enemyDamage: 1
   dropPickupChance: 50
@@ -331,7 +331,7 @@ MonoBehaviour:
   healthPickup: {fileID: 1392068949382802, guid: 10485e96a4bd64448a6739475551607d,
     type: 2}
   attackSpeed: 4
-  stopDistance: 3
+  stopDistance: 2
 --- !u!212 &212552416364175918
 SpriteRenderer:
   m_ObjectHideFlags: 1

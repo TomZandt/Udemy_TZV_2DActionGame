@@ -36,8 +36,6 @@ public class WaveSpawner : MonoBehaviour
     [Header("The spawn point for the boss")]
     public Transform bossSpawnPoint;
 
-    public Canvas textCanvas1, textCanvas2, textCanvas3;
-
     private Wave currentWave;
     private int currentWaveIndex = 0;
     private Transform playerTransform;
@@ -56,12 +54,8 @@ public class WaveSpawner : MonoBehaviour
     //****************************************************************************************************
     IEnumerator StartNextWave(int index)
     {
-        textCanvas2.gameObject.SetActive(true);
-
         // Wait for the wave timer
         yield return new WaitForSeconds(timeBetweenWaves);
-
-        textCanvas2.gameObject.SetActive(false);
 
         StartCoroutine(SpawnWave(index));
     }
@@ -107,11 +101,6 @@ public class WaveSpawner : MonoBehaviour
     //****************************************************************************************************
     private void Update()
     {
-        if (playerTransform == null)
-        {
-            textCanvas1.gameObject.SetActive(true);
-        }
-
         // If we have finshed spawning all the enemis in the wave and they are all dead
         if (finishedSpawning == true && GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
@@ -128,8 +117,6 @@ public class WaveSpawner : MonoBehaviour
             {
                 // Spawn in boss
                 Instantiate(boss, bossSpawnPoint.position, bossSpawnPoint.rotation);
-
-                textCanvas3.gameObject.SetActive(true);
             }
         }
     }
