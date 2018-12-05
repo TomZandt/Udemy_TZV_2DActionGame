@@ -30,6 +30,12 @@ public class WaveSpawner : MonoBehaviour
     [Header("The time between each wave in seconds")]
     public float timeBetweenWaves = 30f;
 
+    [Header("The boss prefab")]
+    public GameObject boss;
+
+    [Header("The spawn point for the boss")]
+    public Transform bossSpawnPoint;
+
     public Canvas textCanvas1, textCanvas2, textCanvas3;
 
     private Wave currentWave;
@@ -120,6 +126,9 @@ public class WaveSpawner : MonoBehaviour
             }
             else
             {
+                // Spawn in boss
+                Instantiate(boss, bossSpawnPoint.position, bossSpawnPoint.rotation);
+
                 textCanvas3.gameObject.SetActive(true);
             }
         }
