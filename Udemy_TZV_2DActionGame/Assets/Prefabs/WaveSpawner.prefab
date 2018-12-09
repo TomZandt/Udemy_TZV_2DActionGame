@@ -113,3 +113,4 @@ MonoBehaviour:
   timeBetweenWaves: 1
   boss: {fileID: 1482527755596208, guid: 549493806d0996b459a3350aae2623ab, type: 2}
   bossSpawnPoint: {fileID: 4956718710048140}
+  healthBar: {fileID: 0}

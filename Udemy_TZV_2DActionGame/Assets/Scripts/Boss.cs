@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
@@ -22,12 +23,17 @@ public class Boss : MonoBehaviour
 
     private int halfHealth = 100;
     private Animator anim;
+    private Slider healthBar;
 
     //****************************************************************************************************
     private void Start()
     {
         halfHealth = bossHealth / 2;
         anim = GetComponent<Animator>();
+
+        healthBar = FindObjectOfType<Slider>();
+        healthBar.maxValue = bossHealth;
+        healthBar.value = bossHealth;
     }
 
     //****************************************************************************************************
@@ -35,12 +41,16 @@ public class Boss : MonoBehaviour
     {
         bossHealth -= damageAmount;
 
+        healthBar.value = bossHealth;
+
         // Iff the boss is dead
         if (bossHealth <= 0)
         {
             // Play particle effect
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Instantiate(blood, transform.position, Quaternion.identity);
+
+            healthBar.gameObject.SetActive(false);
 
             Destroy(gameObject);
         }
