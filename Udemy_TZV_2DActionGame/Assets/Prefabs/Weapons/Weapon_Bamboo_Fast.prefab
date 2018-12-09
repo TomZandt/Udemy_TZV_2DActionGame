@@ -282,6 +282,8 @@ MonoBehaviour:
   projectile: {fileID: 1050643559083710, guid: cccd4f47663ba314a847799ccb92b0b0, type: 2}
   barrel: {fileID: 4314779640871348}
   timeBetweenShots: 0.2
+  particleEffect: {fileID: 1302309972561984, guid: c91d7a3db148e8c48ae91307ca7b3fde,
+    type: 2}
 --- !u!212 &212049337676570438
 SpriteRenderer:
   m_ObjectHideFlags: 1

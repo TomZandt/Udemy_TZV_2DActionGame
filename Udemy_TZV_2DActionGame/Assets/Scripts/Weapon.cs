@@ -13,6 +13,9 @@ public class Weapon : MonoBehaviour
     [Header("The time between shots in seconds")]
     public float timeBetweenShots = 0.3f;
 
+    [Header("The shoot effect")]
+    public GameObject particleEffect;
+
     private float shotTime;
 
     //****************************************************************************************************
@@ -34,6 +37,7 @@ public class Weapon : MonoBehaviour
             if(Time.time >= shotTime)
             {
                 Instantiate(projectile, barrel.position, transform.rotation);
+                Instantiate(particleEffect, barrel.position, Quaternion.identity);
 
                 shotTime = Time.time + timeBetweenShots;
             }

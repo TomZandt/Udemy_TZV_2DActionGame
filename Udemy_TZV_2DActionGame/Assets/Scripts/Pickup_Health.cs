@@ -9,6 +9,10 @@ public class Pickup_Health : MonoBehaviour
 
     private MainCharacter playerScript;
 
+    [Header("Pickup particle effect")]
+    public GameObject particleEffect;
+
+
     //****************************************************************************************************
     private void Start()
     {
@@ -21,6 +25,8 @@ public class Pickup_Health : MonoBehaviour
         // If we have collided with the player
         if (collision.tag == "Player")
         {
+            Instantiate(particleEffect, transform.position, Quaternion.identity);
+
             // Heal the player
             playerScript.Heal(amountToHeal);
 

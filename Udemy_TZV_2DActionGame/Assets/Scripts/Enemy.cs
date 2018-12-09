@@ -29,6 +29,10 @@ public class Enemy : MonoBehaviour
     public GameObject[] dropPickups;
     public GameObject healthPickup;
 
+    [Header("The death effect")]
+    public GameObject deathEffect;
+    public GameObject blood;
+
     //****************************************************************************************************
     public virtual void Start()
     {
@@ -68,6 +72,10 @@ public class Enemy : MonoBehaviour
                 // Spawn in place of enemy
                 Instantiate(healthPickup, transform.position, transform.rotation);
             }
+
+            // Play particle effect
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Instantiate(blood, transform.position, Quaternion.identity);
 
             // Destroy me
             Destroy(gameObject);

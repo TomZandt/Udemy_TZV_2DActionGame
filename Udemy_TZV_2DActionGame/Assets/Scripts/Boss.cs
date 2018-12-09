@@ -16,6 +16,10 @@ public class Boss : MonoBehaviour
     [Header("The damage dealth by the boss")]
     public int damage = 1;
 
+    [Header("The death effect")]
+    public GameObject deathEffect;
+    public GameObject blood;
+
     private int halfHealth = 100;
     private Animator anim;
 
@@ -34,6 +38,10 @@ public class Boss : MonoBehaviour
         // Iff the boss is dead
         if (bossHealth <= 0)
         {
+            // Play particle effect
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Instantiate(blood, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
         }
 
@@ -55,7 +63,7 @@ public class Boss : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // If we collide with the player
-        if(collision.tag == "Player")
+        if (collision.tag == "Player")
         {
             // Deal damage to the player
             collision.GetComponent<MainCharacter>().TakeDamage(damage);

@@ -322,6 +322,9 @@ MonoBehaviour:
   - {fileID: 114761665529501234, guid: 032f818cce060d84f81fe038a33ea357, type: 2}
   enemyOffset: {x: 10, y: 10, z: 0}
   damage: 1
+  deathEffect: {fileID: 1911351036598866, guid: c144bc9386261b1479106938100a7611,
+    type: 2}
+  blood: {fileID: 1404999857739646, guid: db2ade65f29554845abe2ef9287444f2, type: 2}
 --- !u!212 &212036457635038120
 SpriteRenderer:
   m_ObjectHideFlags: 1

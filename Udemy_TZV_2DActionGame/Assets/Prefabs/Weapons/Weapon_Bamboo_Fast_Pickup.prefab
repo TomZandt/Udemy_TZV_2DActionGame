@@ -307,6 +307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponToEquip: {fileID: 114547907181630616, guid: e6bb810df4017884ca015336103da8eb,
     type: 2}
+  particleEffect: {fileID: 1115029964334444, guid: 3b4713c58e1c21b4faef565b50645fde,
+    type: 2}
 --- !u!212 &212012499673295680
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -70,6 +70,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpeed: 10
   damageDealt: 1
+  deathEffect: {fileID: 1911351036598866, guid: c144bc9386261b1479106938100a7611,
+    type: 2}
 --- !u!212 &212413075648927614
 SpriteRenderer:
   m_ObjectHideFlags: 1

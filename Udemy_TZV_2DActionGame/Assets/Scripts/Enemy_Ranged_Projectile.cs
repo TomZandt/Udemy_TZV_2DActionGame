@@ -10,6 +10,9 @@ public class Enemy_Ranged_Projectile : MonoBehaviour
     [Header("The damage dealt by the projectile")]
     public int damageDealt = 1;
 
+    [Header("The death effect")]
+    public GameObject deathEffect;
+
     private MainCharacter playerScript;
     private Vector2 targetPosition;
 
@@ -31,6 +34,9 @@ public class Enemy_Ranged_Projectile : MonoBehaviour
         }
         else
         {
+            // Play particle effect
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
         }
     }
@@ -40,6 +46,9 @@ public class Enemy_Ranged_Projectile : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            // Play particle effect
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+
             playerScript.TakeDamage(damageDealt);
 
             Destroy(gameObject);
