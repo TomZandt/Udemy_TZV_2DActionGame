@@ -13,6 +13,7 @@ public class MainCharacter : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public Animator hurtPanel;
 
     private Rigidbody2D myRB;
     private Vector2 moveAmount;
@@ -66,9 +67,11 @@ public class MainCharacter : MonoBehaviour
         myHealth -= damageAmount;
 
         UpdateHealthUI(myHealth);
+        hurtPanel.SetTrigger("Hurt");
 
         if (myHealth <= 0)
         {
+            hurtPanel.SetTrigger("Dead");
             Destroy(gameObject);
         }
     }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class Weapon : MonoBehaviour
 {
@@ -16,7 +17,15 @@ public class Weapon : MonoBehaviour
     [Header("The shoot effect")]
     public GameObject particleEffect;
 
+    public Animator cameraAnim;
+
     private float shotTime;
+
+    //****************************************************************************************************
+    private void Start()
+    {
+        cameraAnim = Camera.main.GetComponent<CinemachineBrain>().ActiveVirtualCamera.VirtualCameraGameObject.GetComponent<Animator>();
+    }
 
     //****************************************************************************************************
     private void Update()
@@ -38,7 +47,7 @@ public class Weapon : MonoBehaviour
             {
                 Instantiate(projectile, barrel.position, transform.rotation);
                 Instantiate(particleEffect, barrel.position, Quaternion.identity);
-
+                cameraAnim.SetTrigger("Camera Shake");
                 shotTime = Time.time + timeBetweenShots;
             }
         }
