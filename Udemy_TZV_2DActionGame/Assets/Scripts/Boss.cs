@@ -25,6 +25,8 @@ public class Boss : MonoBehaviour
     private Animator anim;
     private Slider healthBar;
 
+    private SceneTransitions sceneTransition;
+
     //****************************************************************************************************
     private void Start()
     {
@@ -34,6 +36,8 @@ public class Boss : MonoBehaviour
         healthBar = FindObjectOfType<Slider>();
         healthBar.maxValue = bossHealth;
         healthBar.value = bossHealth;
+
+        sceneTransition = FindObjectOfType<SceneTransitions>();
     }
 
     //****************************************************************************************************
@@ -53,6 +57,8 @@ public class Boss : MonoBehaviour
             healthBar.gameObject.SetActive(false);
 
             Destroy(gameObject);
+
+            sceneTransition.LoadScene("You_Won");
         }
 
         // If the boss is at half health

@@ -19,6 +19,8 @@ public class MainCharacter : MonoBehaviour
     private Vector2 moveAmount;
     private Animator myAnimator;
 
+    private SceneTransitions sceneTransition;
+
     //****************************************************************************************************
     private void Start()
     {
@@ -27,6 +29,8 @@ public class MainCharacter : MonoBehaviour
 
         // Assign Animator
         myAnimator = GetComponent<Animator>();
+
+        sceneTransition = FindObjectOfType<SceneTransitions>();
     }
 
     //****************************************************************************************************
@@ -73,6 +77,7 @@ public class MainCharacter : MonoBehaviour
         {
             hurtPanel.SetTrigger("Dead");
             Destroy(gameObject);
+            sceneTransition.LoadScene("You_Lost");
         }
     }
 
